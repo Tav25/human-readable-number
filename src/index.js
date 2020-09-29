@@ -61,5 +61,5 @@ module.exports = function toReadable(number) {
 
     //   console.log(`* ${hundreds} ${dozens} ${units}`)
     //   console.log(`${hundredsHumans} ${dozensHumans} ${unitsHumans}`)
-    return (`${hundredsHumans}${dozensHumans} ${unitsHumans}`);
+    return (`${hundredsHumans} ${dozensHumans} ${unitsHumans}`).replace(/\s+/g, ' ').trim();// delete 2 space
 }
